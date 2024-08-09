@@ -20,7 +20,7 @@ module.exports.get = fastify => ({
 			path: '/',
 			sameSite: 'Lax',
 			secure: false,
-		}).send('The token has been revoked.');
+		}).send('The token has been revoked. Please return to the last page and refresh to reauthenticate.');
 	},
 	onRequest: [fastify.authenticate],
 });
